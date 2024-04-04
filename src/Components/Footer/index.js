@@ -1,9 +1,10 @@
 import React from "react";
-import Logo from "../Assets/Logo.svg";
+import Logo from "../../Assets/Logo.svg";
 import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import "./styles.css"
 
 const Footer = () => {
   return (

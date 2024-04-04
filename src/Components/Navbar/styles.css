@@ -1,0 +1,63 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    position: fixed;
+    z-index: 999;
+    width: 85vw;
+    padding: 0 1rem;
+}
+
+.navbar-menu-container {
+    display: none;
+}
+
+.navbar-links-container span {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.navbar-cart-icon {
+    font-size: 1.15rem;
+}
+
+.navbar-menu-container svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    nav {
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.16);
+        border-radius: 8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(1.2px);
+        -webkit-backdrop-filter: blur(1.2px);
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar-links-container span {
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-logo-container {
+        max-width: 140px;
+    }
+
+    .navbar-links-container {
+        display: none;
+    }
+
+    .navbar-menu-container {
+        display: flex;
+    }
+}

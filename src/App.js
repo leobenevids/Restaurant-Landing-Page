@@ -1,19 +1,15 @@
 import "./App.css";
-import Home from "./Components/Home";
-import About from "./Components/About";
-import Work from "./Components/Work";
-import Testimonial from "./Components/Testimonial";
-import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
+import { sections } from "./Components/Sections";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <About />
-      <Work />
-      <Testimonial />
-      <Contact />
+      <Navbar />
+      {sections.map(({ id, component }) => (
+        <div id={id}>{component}</div>
+      ))}
       <Footer />
     </div>
   );
